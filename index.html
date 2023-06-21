@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/slick.css" />
+    <link rel="stylesheet" href="./public/css/venobox.css" />
+
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <!-- <script src="./tailwind_cdn.js"></script> -->
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body class="bg-color-dark">
+    <nav>
+      <div
+        class="menu_wraper fixed right-0 top-0 z-40 h-screen w-1/2 bg-color-dark ps-[10%] pt-8"
+      >
+        <div
+          class="mb-5 flex items-center justify-between pe-7 text-xl font-medium text-color-gray"
+        >
+          <h3 class="">Menu</h3>
+          <button class=" w-8 border border-color-gray text-color-gray
+          transition duration-300 hover:border-primary 
+          rounded-md hover:text-primary rounded-sm h-8">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <ul class="flex flex-col gap-y-7">
+          <li
+            class="text-sm font-normal capitalize text-color-gray transition duration-300 hover:text-primary"
+          >
+            <a class="space-x-1" href="#home">
+              <i class="fa-solid fa-house"></i> <span>Home</span>
+            </a>
+          </li>
+
+          <li class="menu_item-1st">
+            <a class="space-x-1" href="#home">
+              <i class="fa-solid fa-user"></i> <span>about</span>
+            </a>
+          </li>
+
+          <li class="menu_item-1st">
+            <a class="space-x-1" href="#home">
+              <i class="fa-solid fa-briefcase"></i> <span>resume</span>
+            </a>
+          </li>
+
+          <li class="menu_item-1st">
+            <a class="space-x-1" href="#home">
+              <i class="fa-solid fa-bars-staggered"></i> <span>services</span>
+            </a>
+          </li>
+
+          <li class="menu_item-1st">
+            <a class="space-x-1" href="#home">
+              <i class="fa-solid fa-shapes"></i> <span>skills</span>
+            </a>
+          </li>
+
+          <li class="menu_item-1st">
+            <a class="space-x-1" href="#home">
+              <i class="fa-solid fa-table-cells"></i> <span>portfolios</span>
+            </a>
+          </li>
+
+          <li class="menu_item-1st">
+            <a class="space-x-1" href="#home">
+              <i class="fa-regular fa-message"></i> <span>testomonial</span>
+            </a>
+          </li>
+
+          <li class="menu_item-1st">
+            <a class="space-x-1" href="#home">
+              <i class="fa-solid fa-envelope"></i><span>contact</span>
+            </a>
+          </li>
+        </ul>
+        <div class="m-10 ms-auto">
+          <h4 class="capitalize text-color-gray">social</h4>
+          <div class="mt-4 flex gap-3 text-color-gray">
+            <a class="transition-all duration-300 hover:text-primary" href="">
+              <i class="fa-brands fa-twitter"></i
+            ></a>
+            <a class="transition duration-300 hover:text-primary" href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="transition-all duration-300 hover:text-primary" href="">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="container mx-auto mt-5">
+        <div
+          class="left-5 rounded-2xl bg-color-dark p-8 lg:fixed lg:top-1/2 lg:max-w-[350px] lg:-translate-y-1/2 lg:border lg:border-color-gray"
+        >
+          <div class="mb-8 flex justify-between">
+            <div class="font-semibold text-color-lite">Kazi Raihan</div>
+            <h3 class="font-semibold capitalize text-color-lite">
+              web designer
+            </h3>
+          </div>
+          <div
+            class="profile mx-auto mb-9 max-h-[200px] max-w-[250px] overflow-hidden rounded-2xl"
+          >
+            <img
+              class="object-scale-down"
+              src="./image/kazi-raihan.jpg"
+              alt=""
+            />
+          </div>
+          <h3 class="mb-1 text-center text-2xl font-semibold text-color-lite">
+            Kazi Raihan
+          </h3>
+          <h3 class="mb-5 text-center text-xl font-semibold text-color-lite">
+            Dhaka,Bangladesh
+          </h3>
+          <p class="copyright mb-4 text-center text-sm text-color-gray">
+            ©kazi-raihan. All Rights Reserved
+          </p>
+          <div class="left-5 mb-4 flex justify-center gap-5">
+            <a
+              class="h-10 w-10 rounded-full border border-color-gray text-center leading-10 text-color-gray transition duration-300 hover:border-primary hover:text-primary"
+              href=""
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a class="btn_socil" href="">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a class="btn_socil" href="">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="btn_socil" href="">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <a
+            class="mx-[27%] block rounded-full border bg-primary px-8 py-2 text-center uppercase transition duration-300 hover:border-primary hover:bg-transparent hover:text-primary lg:mx-5"
+            href=""
+          >
+            Hire Me</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/62d2d1d427.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./public/js/jquery-1.12.4.min.js"></script>
+    <script src="./public/js/slick.js"></script>
+    <script src="./public/js/venobox.js"></script>
+    <script src="./public/js/script.js"></script>
+  </body>
+</html>
