@@ -6,11 +6,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="./public/css/slick.css" />
     <link rel="stylesheet" href="./public/css/venobox.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="./public/css/unpkg.com_aos@2.3.1_dist_aos.css"
+    /> -->
 
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-
     <!-- <script src="./tailwind_cdn.js"></script> -->
     <link rel="stylesheet" href="./dist/output.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="bg-color-dark">
     <nav>
@@ -239,37 +244,46 @@
     </section>
     <!-- ======================  My profile part End  ====================== -->
     <!-- ======================  Banner Start  ====================== -->
-    <section id="home">
+    <section id="home" class="pt-8">
       <div class="container mx-auto mt-20">
         <div class="content_width">
           <div
-            class="mb-8 flex w-max gap-2 rounded-xl border border-color-lite px-2 py-1 text-xs text-color-lite"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            class="mb-12 flex w-max gap-2 rounded-xl border border-color-lite px-2 py-1 text-xs text-color-lite"
           >
             <i class="fa-solid fa-house"></i>
             <h2 class="uppercase">INTRODUCE</h2>
           </div>
 
           <h1
+            data-aos="fade-up"
+            data-aos-duration="1500"
             class="mb-11 text-[78px] font-light leading-[90px] tracking-[-2px] text-color-lite"
           >
             Say Hi from <span class="text-primary">Drake</span>, Framer Designer
             and Developer
           </h1>
-          <p class="mb-8 max-w-[480px] text-color-gray">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            class="mb-8 max-w-[480px] text-color-gray"
+          >
             I design and code beautifully simple things and i love what i do.
             Just simple like that!
           </p>
-          <a
-            href="#portfolio"
-            class="ml-auto mr-[15px] flex h-[175px] w-[175px] animate-spin-slow justify-center rounded-full border border-color-gray text-center"
-            data-aos="fade-up"
-            ><img src="../assets/images/round-text.png" alt="Rounded Text" /><i
-              class="las la-arrow-down"
-            ></i
-          ></a>
+          <div data-aos="fade-up" data-aos-duration="1500">
+            <a
+              href="#portfolio"
+              class="ml-auto mr-[15px] flex h-[175px] w-[175px] animate-spin-slow justify-center rounded-full border border-color-gray text-center"
+              ><img
+                src="../assets/images/round-text.png"
+                alt="Rounded Text" /><i class="las la-arrow-down"></i
+            ></a>
+          </div>
 
           <div id="count-up " class="flex gap-9">
-            <div>
+            <div data-aos="fade-right" data-aos-duration="1500">
               <span class="countUp mb-9 text-7xl text-primary" data-val="10">
                 0
               </span>
@@ -278,7 +292,7 @@
                 >Years of Experience</span
               >
             </div>
-            <div>
+            <div data-aos="fade-left" data-aos-duration="1500">
               <span class="countUp mb-9 text-7xl text-primary" data-val="182">
                 0
               </span>
@@ -292,32 +306,178 @@
       </div>
     </section>
     <!-- ======================  Banner End  ====================== -->
-    <!-- ======================  Banner End  ====================== -->
-    <section id="about" class="mt-28">
+    <!-- ======================  about start  ====================== -->
+    <section id="about" class="pt-28">
       <div class="container mx-auto mt-20">
         <div class="content_width">
           <div
-            class="mb-8 flex w-max gap-2 rounded-xl border border-color-lite px-2 py-1 text-xs text-color-lite"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            class="mb-12 flex w-max gap-2 rounded-xl border border-color-lite px-2 py-1 text-xs text-color-lite"
           >
-            <i class="fa-solid fa-house"></i>
-            <h2 class="uppercase">INTRODUCE</h2>
+            <i class="fa-solid fa-briefcase"></i>
+            <h2 class="uppercase">about</h2>
+          </div>
+          <h3
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            class="mb-8 text-5xl font-light text-color-lite"
+          >
+            Every great design begin with an even
+            <span class="text-primary">better story</span>
+          </h3>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            class="max-w-[610px] leading-[30px] text-color-gray"
+          >
+            Since beginning my journey as a freelance designer nearly 8 years
+            ago, I've done remote work for agencies, consulted for startups, and
+            collaborated with talented people to create digital products for
+            both business and consumer use. I'm quietly confident, naturally
+            curious, and perpetually working on improving my chopsone design
+            problem at a time.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================  About End  ====================== -->
+    <!-- ======================  resume Start  ====================== -->
+    <section id="resume" class="pt-28">
+      <div class="container mx-auto mt-20">
+        <div class="content_width">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            class="mb-12 flex w-max gap-2 rounded-xl border border-color-lite px-2 py-1 text-xs text-color-lite"
+          >
+            <i class="fa-solid fa-user"></i>
+            <h2 class="uppercase">resume</h2>
+          </div>
+          <h3
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="mb-8 text-5xl font-light text-color-lite"
+          >
+            Education &
+            <span class="text-primary">Experience</span>
+          </h3>
+
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            class="group relative border-l border-color-gray pb-16 pl-[74px] after:absolute after:left-0 after:top-0 after:h-[14px] after:w-[14px] after:-translate-x-1/2 after:rounded-full after:bg-color-gray after:transition after:duration-500 hover:after:bg-primary"
+          >
+            <h5
+              class="mb-7 text-color-gray transition duration-300 group-hover:text-primary"
+            >
+              2023 - Present
+            </h5>
+            <h3 class="mb-1 text-2xl font-light text-color-lite">
+              Framer Desinger & Developer
+            </h3>
+            <small class="mb-8 block text-sm text-color-gray"
+              >Brunodee Agency</small
+            >
+            <h3 class="mb-1 text-2xl font-light text-color-lite">
+              Front-End WordPress Developer
+            </h3>
+            <small class="text-sm text-color-gray">Envato Market</small>
+          </div>
+
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            class="group relative border-l border-color-gray pb-16 pl-[74px] after:absolute after:left-0 after:top-0 after:h-[14px] after:w-[14px] after:-translate-x-1/2 after:rounded-full after:bg-color-gray after:transition after:duration-500 hover:after:bg-primary"
+          >
+            <h5
+              class="mb-7 text-color-gray transition duration-300 group-hover:text-primary"
+            >
+              2023 - Present
+            </h5>
+            <h3 class="mb-1 text-2xl font-light text-color-lite">
+              Framer Desinger & Developer
+            </h3>
+            <small class="mb-8 block text-sm text-color-gray"
+              >Brunodee Agency</small
+            >
+            <h3 class="mb-1 text-2xl font-light text-color-lite">
+              Front-End WordPress Developer
+            </h3>
+            <small class="text-sm text-color-gray">Envato Market</small>
+          </div>
+
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            class="group relative border-l border-color-gray pb-16 pl-[74px] after:absolute after:left-0 after:top-0 after:h-[14px] after:w-[14px] after:-translate-x-1/2 after:rounded-full after:bg-color-gray after:transition after:duration-500 hover:after:bg-primary"
+          >
+            <h5
+              class="mb-7 text-color-gray transition duration-300 group-hover:text-primary"
+            >
+              2023 - Present
+            </h5>
+            <h3 class="mb-1 text-2xl font-light text-color-lite">
+              Framer Desinger & Developer
+            </h3>
+            <small class="mb-8 block text-sm text-color-gray"
+              >Brunodee Agency</small
+            >
+            <h3 class="mb-1 text-2xl font-light text-color-lite">
+              Front-End WordPress Developer
+            </h3>
+            <small class="text-sm text-color-gray">Envato Market</small>
           </div>
         </div>
       </div>
     </section>
-    <!-- ======================  Banner End  ====================== -->
+    <!-- ======================  resume End  ====================== -->
+    <!-- ======================  Services Start  ====================== -->
+    <section id="resume" class="pt-28">
+      <div class="container mx-auto mt-20">
+        <div class="content_width">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            class="mb-12 flex w-max gap-2 rounded-xl border border-color-lite px-2 py-1 text-xs text-color-lite"
+          >
+            <i class="fa-solid fa-user"></i>
+            <h2 class="uppercase">services</h2>
+          </div>
+          <h3
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="mb-8 text-5xl font-light text-color-lite"
+          >
+          My
+            <span class="text-primary">Specializations</span>
+          </h3>
+          <div class="item_wraper">
+            <div class="service_item border pt-[44px] px-12 pb-10  hover:border-primary border-color-gray rounded-[20px] mb-[10px] relative transition duration-300"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================  Services End  ====================== -->
+    <section class="pt-[1000px]"></section>
 
     <script
       src="https://kit.fontawesome.com/62d2d1d427.js"
       crossorigin="anonymous"
     ></script>
     <script src="./public/js/jquery-1.12.4.min.js"></script>
+
     <script src="./public/js/slick.js"></script>
     <script src="./public/js/venobox.js"></script>
-    <script src="./public/js/aos.js"></script>
     <script src="./public/js/vanilla-tilt.js"></script>
     <script src="./public/js/count-up.js"></script>
 
     <script src="./public/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
