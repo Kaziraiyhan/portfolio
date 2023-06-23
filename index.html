@@ -14,67 +14,73 @@
   </head>
   <body class="bg-color-dark">
     <nav>
+      <button
+        class="highlight2 menu_bar fixed right-7 top-7 h-8 w-8 rounded-md border border-color-gray text-color-gray transition duration-300 hover:border-primary hover:text-primary lg:hidden"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <button
+        class="menu_close highlight2 fixed right-7 top-7 z-50 hidden h-8 w-8 rounded-md border border-color-gray text-color-gray transition duration-300 hover:border-primary hover:text-primary"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
       <div
-        class="menu_wraper fixed right-0 top-0 z-40 h-screen w-1/2 bg-color-dark ps-[10%] pt-8"
+        class="menu_wraper fixed right-0 top-0 z-40 hidden h-screen w-[250px] bg-color-dark ps-[50px] pt-8 lg:hidden"
       >
         <div
           class="mb-5 flex items-center justify-between pe-7 text-xl font-medium text-color-gray"
         >
           <h3 class="">Menu</h3>
-          <button class=" w-8 border border-color-gray text-color-gray
-          transition duration-300 hover:border-primary 
-          rounded-md hover:text-primary rounded-sm h-8">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
+          <div class="menu-btn relative"></div>
         </div>
 
         <ul class="flex flex-col gap-y-7">
           <li
-            class="text-sm font-normal capitalize text-color-gray transition duration-300 hover:text-primary"
+            class="relative text-sm font-normal capitalize text-color-gray transition duration-300 hover:text-primary"
           >
-            <a class="space-x-1" href="#home">
+            <a class="highlight2 space-x-1" href="#home">
               <i class="fa-solid fa-house"></i> <span>Home</span>
             </a>
           </li>
 
           <li class="menu_item-1st">
-            <a class="space-x-1" href="#home">
+            <a class="highlight2 space-x-1" href="#home">
               <i class="fa-solid fa-user"></i> <span>about</span>
             </a>
           </li>
 
           <li class="menu_item-1st">
-            <a class="space-x-1" href="#home">
+            <a class="highlight2 space-x-1" href="#home">
               <i class="fa-solid fa-briefcase"></i> <span>resume</span>
             </a>
           </li>
 
           <li class="menu_item-1st">
-            <a class="space-x-1" href="#home">
+            <a class="highlight2 space-x-1" href="#home">
               <i class="fa-solid fa-bars-staggered"></i> <span>services</span>
             </a>
           </li>
 
           <li class="menu_item-1st">
-            <a class="space-x-1" href="#home">
+            <a class="highlight2 space-x-1" href="#home">
               <i class="fa-solid fa-shapes"></i> <span>skills</span>
             </a>
           </li>
 
           <li class="menu_item-1st">
-            <a class="space-x-1" href="#home">
+            <a class="highlight2 space-x-1" href="#home">
               <i class="fa-solid fa-table-cells"></i> <span>portfolios</span>
             </a>
           </li>
 
           <li class="menu_item-1st">
-            <a class="space-x-1" href="#home">
+            <a class="highlight2 space-x-1" href="#home">
               <i class="fa-regular fa-message"></i> <span>testomonial</span>
             </a>
           </li>
 
           <li class="menu_item-1st">
-            <a class="space-x-1" href="#home">
+            <a class="highlight2 space-x-1" href="#home">
               <i class="fa-solid fa-envelope"></i><span>contact</span>
             </a>
           </li>
@@ -82,21 +88,103 @@
         <div class="m-10 ms-auto">
           <h4 class="capitalize text-color-gray">social</h4>
           <div class="mt-4 flex gap-3 text-color-gray">
-            <a class="transition-all duration-300 hover:text-primary" href="">
+            <a
+              class="highlight2 p-3 transition-all duration-300 hover:text-primary"
+              href=""
+            >
               <i class="fa-brands fa-twitter"></i
             ></a>
-            <a class="transition duration-300 hover:text-primary" href="">
+            <a
+              class="highlight2 p-3 transition duration-300 hover:text-primary"
+              href=""
+            >
               <i class="fa-brands fa-instagram"></i>
             </a>
-            <a class="transition-all duration-300 hover:text-primary" href="">
+            <a
+              class="highlight2 p-3 transition-all duration-300 hover:text-primary"
+              href=""
+            >
               <i class="fa-brands fa-facebook-f"></i>
             </a>
           </div>
         </div>
       </div>
+
+      <div
+        class="menu_lg fixed right-16 top-1/2 hidden -translate-y-1/2 lg:block"
+      >
+        <ul
+          class="flex flex-col gap-4 rounded-full border border-color-gray p-4"
+        >
+          <li>
+            <a
+              class="relative p-2 text-color-gray transition duration-300 hover:text-primary"
+              href="#home"
+              ><span class="menu_z">Home</span>
+              <i class="fa-solid fa-house highlight2"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="relative p-2 text-color-gray transition duration-300 hover:text-primary"
+              href="#about"
+              ><span class="menu_z">About</span>
+              <i class="fa-solid fa-user highlight2"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="relative p-2 text-color-gray transition duration-300 hover:text-primary"
+              href="#resume"
+              ><span class="menu_z">Resume</span>
+              <i class="fa-solid fa-briefcase highlight2"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="relative p-2 text-color-gray transition duration-300 hover:text-primary"
+              href="#services"
+              ><span class="menu_z">Services</span>
+              <i class="fa-solid fa-bars-staggered highlight2"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="relative p-2 text-color-gray transition duration-300 hover:text-primary"
+              href="#skills"
+              ><span class="menu_z">Skills</span>
+              <i class="fa-solid fa-shapes highlight2"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="relative p-2 text-color-gray transition duration-300 hover:text-primary"
+              href="#portfolio"
+              ><span class="menu_z">Portfolios</span>
+              <i class="fa-solid fa-table-cells highlight2"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="relative p-2 text-color-gray transition duration-300 hover:text-primary"
+              href="#testimonial"
+              ><span class="menu_z">Testimonial</span>
+              <i class="fa-solid fa-message highlight2"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="relative p-2 text-color-gray transition duration-300 hover:text-primary"
+              href="#contact"
+              ><span class="menu_z">Contact</span>
+              <i class="fa-solid fa-envelope highlight2"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <section id="profile">
-      <div class="container mx-auto mt-5">
+      <div class="group container mx-auto mt-8">
         <div
           class="left-5 rounded-2xl bg-color-dark p-8 lg:fixed lg:top-1/2 lg:max-w-[350px] lg:-translate-y-1/2 lg:border lg:border-color-gray"
         >
@@ -110,7 +198,7 @@
             class="profile mx-auto mb-9 max-h-[200px] max-w-[250px] overflow-hidden rounded-2xl"
           >
             <img
-              class="object-scale-down"
+              class="object-scale-down grayscale transition duration-500 group-hover:grayscale-0"
               src="./image/kazi-raihan.jpg"
               alt=""
             />
@@ -126,22 +214,22 @@
           </p>
           <div class="left-5 mb-4 flex justify-center gap-5">
             <a
-              class="h-10 w-10 rounded-full border border-color-gray text-center leading-10 text-color-gray transition duration-300 hover:border-primary hover:text-primary"
+              class="h-10 w-10 rounded-full border border-color-gray text-center leading-10 text-color-gray transition duration-300 hover:border-primary hover:text-primary hover:shadow hover:shadow-primary"
               href=""
               ><i class="fa-brands fa-twitter"></i
             ></a>
-            <a class="btn_socil" href="">
+            <a class="btn_socil hover:shadow hover:shadow-primary" href="">
               <i class="fa-brands fa-facebook-f"></i>
             </a>
-            <a class="btn_socil" href="">
+            <a class="btn_socil hover:shadow hover:shadow-primary" href="">
               <i class="fa-brands fa-instagram"></i>
             </a>
-            <a class="btn_socil" href="">
+            <a class="btn_socil hover:shadow hover:shadow-primary" href="">
               <i class="fa-brands fa-github"></i>
             </a>
           </div>
           <a
-            class="mx-[27%] block rounded-full border bg-primary px-8 py-2 text-center uppercase transition duration-300 hover:border-primary hover:bg-transparent hover:text-primary lg:mx-5"
+            class="mx-[27%] block rounded-full border bg-primary px-8 py-2 text-center uppercase transition duration-300 hover:border-primary hover:bg-transparent hover:text-primary hover:shadow hover:shadow-primary lg:mx-5"
             href=""
           >
             Hire Me</a
@@ -149,6 +237,75 @@
         </div>
       </div>
     </section>
+    <!-- ======================  My profile part End  ====================== -->
+    <!-- ======================  Banner Start  ====================== -->
+    <section id="home">
+      <div class="container mx-auto mt-20">
+        <div class="content_width">
+          <div
+            class="mb-8 flex w-max gap-2 rounded-xl border border-color-lite px-2 py-1 text-xs text-color-lite"
+          >
+            <i class="fa-solid fa-house"></i>
+            <h2 class="uppercase">INTRODUCE</h2>
+          </div>
+
+          <h1
+            class="mb-11 text-[78px] font-light leading-[90px] tracking-[-2px] text-color-lite"
+          >
+            Say Hi from <span class="text-primary">Drake</span>, Framer Designer
+            and Developer
+          </h1>
+          <p class="mb-8 max-w-[480px] text-color-gray">
+            I design and code beautifully simple things and i love what i do.
+            Just simple like that!
+          </p>
+          <a
+            href="#portfolio"
+            class="ml-auto mr-[15px] flex h-[175px] w-[175px] animate-spin-slow justify-center rounded-full border border-color-gray text-center"
+            data-aos="fade-up"
+            ><img src="../assets/images/round-text.png" alt="Rounded Text" /><i
+              class="las la-arrow-down"
+            ></i
+          ></a>
+
+          <div id="count-up " class="flex gap-9">
+            <div>
+              <span class="countUp mb-9 text-7xl text-primary" data-val="10">
+                0
+              </span>
+              <span class="text-7xl text-primary">+</span>
+              <span class="block w-36 text-color-gray"
+                >Years of Experience</span
+              >
+            </div>
+            <div>
+              <span class="countUp mb-9 text-7xl text-primary" data-val="182">
+                0
+              </span>
+              <span class="text-7xl text-primary">+</span>
+              <span class="block w-[187px] text-color-gray"
+                >projects completed on 15 countries</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================  Banner End  ====================== -->
+    <!-- ======================  Banner End  ====================== -->
+    <section id="about" class="mt-28">
+      <div class="container mx-auto mt-20">
+        <div class="content_width">
+          <div
+            class="mb-8 flex w-max gap-2 rounded-xl border border-color-lite px-2 py-1 text-xs text-color-lite"
+          >
+            <i class="fa-solid fa-house"></i>
+            <h2 class="uppercase">INTRODUCE</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================  Banner End  ====================== -->
 
     <script
       src="https://kit.fontawesome.com/62d2d1d427.js"
@@ -157,6 +314,10 @@
     <script src="./public/js/jquery-1.12.4.min.js"></script>
     <script src="./public/js/slick.js"></script>
     <script src="./public/js/venobox.js"></script>
+    <script src="./public/js/aos.js"></script>
+    <script src="./public/js/vanilla-tilt.js"></script>
+    <script src="./public/js/count-up.js"></script>
+
     <script src="./public/js/script.js"></script>
   </body>
 </html>
