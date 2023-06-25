@@ -62,3 +62,13 @@ menu_bar.addEventListener("click", function() {
       });    
   });
 //   
+
+
+
+const arr = [23,45,67]
+console.log(arr)
+console.log('hellow')
+
+
+
+
