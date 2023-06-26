@@ -555,8 +555,8 @@ video {
 @media (min-width: 1130px){
   .container{
     max-width: 1130px;
-    padding-right: 3rem;
-    padding-left: 3rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
 
@@ -768,6 +768,10 @@ li:hover .highlight2 {
           margin-inline-start: auto;
 }
 
+.mt-14{
+  margin-top: 3.5rem;
+}
+
 .mt-20{
   margin-top: 5rem;
 }
@@ -804,24 +808,12 @@ li:hover .highlight2 {
   height: 175px;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
-.h-1{
-  height: 0.25rem;
-}
-
-.h-\[\]{
-  height: ;
-}
-
-.h-\[60\]{
-  height: 60;
-}
-
 .h-\[60px\]{
   height: 60px;
+}
+
+.h-screen{
+  height: 100vh;
 }
 
 .max-h-\[200px\]{
@@ -848,33 +840,21 @@ li:hover .highlight2 {
   width: 187px;
 }
 
+.w-\[22\%\]{
+  width: 22%;
+}
+
 .w-\[250px\]{
   width: 250px;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .w-max{
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-4{
-  width: 1rem;
-}
-
-.w-40{
-  width: 10rem;
-}
-
-.w-1{
-  width: 0.25rem;
-}
-
-.w-1\/4{
-  width: 25%;
-}
-
-.w-full{
-  width: 100%;
 }
 
 .max-w-\[250px\]{
@@ -912,6 +892,10 @@ li:hover .highlight2 {
   flex-direction: column;
 }
 
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
 .items-center{
   align-items: center;
 }
@@ -944,6 +928,15 @@ li:hover .highlight2 {
   gap: 2.25rem;
 }
 
+.gap-x-\[4\%\]{
+  -moz-column-gap: 4%;
+       column-gap: 4%;
+}
+
+.gap-y-6{
+  row-gap: 1.5rem;
+}
+
 .gap-y-7{
   row-gap: 1.75rem;
 }
@@ -966,6 +959,10 @@ li:hover .highlight2 {
   border-radius: 20px;
 }
 
+.rounded-\[85px\]{
+  border-radius: 85px;
+}
+
 .rounded-full{
   border-radius: 9999px;
 }
@@ -976,14 +973,6 @@ li:hover .highlight2 {
 
 .rounded-xl{
   border-radius: 0.75rem;
-}
-
-.rounded-\[\]{
-  border-radius: ;
-}
-
-.rounded-\[85px\]{
-  border-radius: 85px;
 }
 
 .border{
@@ -1086,6 +1075,10 @@ li:hover .highlight2 {
   padding-top: 2.5rem;
 }
 
+.pt-14{
+  padding-top: 3.5rem;
+}
+
 .pt-28{
   padding-top: 7rem;
 }
@@ -1117,6 +1110,10 @@ li:hover .highlight2 {
   line-height: 1;
 }
 
+.text-\[30px\]{
+  font-size: 30px;
+}
+
 .text-\[78px\]{
   font-size: 78px;
 }
@@ -1139,10 +1136,6 @@ li:hover .highlight2 {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[30px\]{
-  font-size: 30px;
 }
 
 .font-light{
@@ -1202,10 +1195,6 @@ li:hover .highlight2 {
 .text-primary{
   --tw-text-opacity: 1;
   color: rgb(109 255 133 / var(--tw-text-opacity));
-}
-
-.text-\[\]{
-  color: ;
 }
 
 .grayscale{

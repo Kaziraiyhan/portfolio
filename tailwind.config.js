@@ -33,8 +33,8 @@ module.exports = {
           DEFAULT: '1rem',
           sm: '1rem',
           lg: '1rem',
-          xl: '3rem',
-          '2xl': '4rem',
+          xl: '1rem',
+          '2xl': '1rem',
         },
       },
       fontFamily: {
