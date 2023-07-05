@@ -2,7 +2,7 @@
   "name": "0mah-tailwind",
   "version": "1.0.0",
   "description": "",
-  "main": "difult_tailwind.config.js",
+  "main": "tailwind.config.js",
   "scripts": {
     "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
