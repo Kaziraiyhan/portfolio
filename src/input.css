@@ -8,6 +8,9 @@
   .btn_socil {
     @apply h-10 w-10 rounded-full border border-color-gray text-center leading-10 text-color-gray transition  duration-300 hover:border-primary hover:text-primary;
   }
+  .btn {
+    @apply mx-[27%] block rounded-full border bg-primary px-8 py-2 text-center uppercase transition duration-300 hover:border-primary hover:bg-transparent hover:text-primary hover:shadow hover:shadow-primary lg:mx-5;
+  }
   .menu_item-1st {
     @apply text-sm font-normal capitalize  text-color-gray transition duration-300 hover:text-primary;
   }
@@ -35,3 +38,5 @@
     /* width: 100%; */
   }
 }
+
+
