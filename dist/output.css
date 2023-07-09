@@ -1611,6 +1611,36 @@ li:hover .highlight2 {
   opacity: 1;
 }
 
+@media (min-width: 640px){
+  .sm\:text-\[78px\]{
+    font-size: 78px;
+  }
+
+  .sm\:text-\[65px\]{
+    font-size: 65px;
+  }
+
+  .sm\:leading-\[90px\]{
+    line-height: 90px;
+  }
+
+  .sm\:leading-\[\]{
+    line-height: ;
+  }
+
+  .sm\:leading-\[77px\]{
+    line-height: 77px;
+  }
+
+  .sm\:text-\[\]{
+    color: ;
+  }
+
+  .sm\:text-\[65\]{
+    color: 65;
+  }
+}
+
 @media (min-width: 768px){
   .md\:w-\[373px\]{
     width: 373px;
