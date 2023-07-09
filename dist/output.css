@@ -695,7 +695,7 @@ li:hover .highlight2 {
 .content_width {
   margin-left: auto;
   max-width: 770px;
-  /* width: 100%; */
+  width: 100%;
 }
 
 .fixed{
@@ -750,6 +750,10 @@ li:hover .highlight2 {
   top: 1.75rem;
 }
 
+.-z-10{
+  z-index: -10;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -760,10 +764,6 @@ li:hover .highlight2 {
 
 .z-50{
   z-index: 50;
-}
-
-.-z-10{
-  z-index: -10;
 }
 
 .m-0{
@@ -786,6 +786,10 @@ li:hover .highlight2 {
 
 .mb-1{
   margin-bottom: 0.25rem;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
 }
 
 .mb-11{
@@ -875,10 +879,6 @@ li:hover .highlight2 {
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mb-10{
-  margin-bottom: 2.5rem;
 }
 
 .block{
@@ -982,16 +982,16 @@ li:hover .highlight2 {
   max-width: 250px;
 }
 
-.max-w-\[33\%\]{
-  max-width: 33%;
-}
-
 .max-w-\[480px\]{
   max-width: 480px;
 }
 
 .max-w-\[610px\]{
   max-width: 610px;
+}
+
+.max-w-full{
+  max-width: 100%;
 }
 
 .-translate-x-1\/2{
@@ -1012,26 +1012,6 @@ li:hover .highlight2 {
 
 .animate-spin-slow{
   animation: spin 7s linear infinite;
-}
-
-@keyframes spin{
-  to{
-    transform: rotate(360deg);
-  }
-}
-
-.animate-spin{
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin{
-  to{
-    transform: rotate(360deg);
-  }
-}
-
-.animate-spin-rev{
-  animation: spin 7s linear infinite reverse;
 }
 
 .flex-col{
@@ -1342,6 +1322,16 @@ li:hover .highlight2 {
   line-height: 1rem;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-light{
   font-weight: 300;
 }
@@ -1380,6 +1370,10 @@ li:hover .highlight2 {
 
 .leading-\[90px\]{
   line-height: 90px;
+}
+
+.leading-\[52px\]{
+  line-height: 52px;
 }
 
 .tracking-\[-2px\]{
@@ -1615,6 +1609,20 @@ li:hover .highlight2 {
 .group:hover .group-hover\:after\:opacity-100::after{
   content: var(--tw-content);
   opacity: 1;
+}
+
+@media (min-width: 768px){
+  .md\:w-\[373px\]{
+    width: 373px;
+  }
+
+  .md\:text-\[78px\]{
+    font-size: 78px;
+  }
+
+  .md\:leading-\[90px\]{
+    line-height: 90px;
+  }
 }
 
 @media (min-width: 950px){

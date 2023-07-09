@@ -35,6 +35,6 @@
   .content_width {
     margin-left: auto;
     max-width: 770px;
-    /* width: 100%; */
+    width: 100%;
   }
 }
