@@ -17,9 +17,8 @@
   .menu_z {
     @apply invisible absolute  right-12 rounded bg-color-deap px-3 py-1 text-sm font-light text-color-lite opacity-0 transition duration-500 after:absolute after:-bottom-1 after:-right-5  after:h-8 after:w-7 after:bg-color-deap after:content-[''];
   }
-  
 
-/*   
+  /*   
   .content-width {
     @apply ml-auto max-w-full xl:max-w-[770px] xl:m-auto;
   } */
@@ -40,6 +39,6 @@
   .content_width {
     margin-left: auto;
     max-width: 100%;
-    @apply xl:max-w-[770px]
+    @apply xl:max-w-[770px];
   }
 }

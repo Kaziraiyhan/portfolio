@@ -718,7 +718,7 @@ li:hover .highlight2 {
 
 .content_width {
   margin-left: auto;
-  max-width: 100%
+  max-width: 100%;
 }
 
 @media (min-width: 1130px){
@@ -811,11 +811,6 @@ li:hover .highlight2 {
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
-}
-
-.my-7{
-  margin-top: 1.75rem;
-  margin-bottom: 1.75rem;
 }
 
 .mb-1{
@@ -1228,10 +1223,6 @@ li:hover .highlight2 {
   padding: 50px;
 }
 
-.p-5{
-  padding: 1.25rem;
-}
-
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1245,6 +1236,11 @@ li:hover .highlight2 {
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .px-8{
@@ -1267,11 +1263,6 @@ li:hover .highlight2 {
   padding-bottom: 2rem;
 }
 
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -1289,8 +1280,8 @@ li:hover .highlight2 {
           padding-inline-end: 1.75rem;
 }
 
-.pl-\[74px\]{
-  padding-left: 74px;
+.pl-10{
+  padding-left: 2.5rem;
 }
 
 .pr-8{
@@ -1316,10 +1307,6 @@ li:hover .highlight2 {
 
 .pt-8{
   padding-top: 2rem;
-}
-
-.pl-10{
-  padding-left: 2.5rem;
 }
 
 .text-center{
@@ -1646,12 +1633,41 @@ li:hover .highlight2 {
 }
 
 @media (min-width: 640px){
+  .sm\:max-w-\[350px\]{
+    max-width: 350px;
+  }
+
+  .sm\:max-w-\[320px\]{
+    max-width: 320px;
+  }
+
+  .sm\:max-w-\[310px\]{
+    max-width: 310px;
+  }
+
+  .sm\:max-w-\[300px\]{
+    max-width: 300px;
+  }
+
+  .sm\:max-w-\[290px\]{
+    max-width: 290px;
+  }
+
+  .sm\:max-w-\[20px\]{
+    max-width: 20px;
+  }
+
+  .sm\:max-w-\[250px\]{
+    max-width: 250px;
+  }
+
   .sm\:pl-\[74px\]{
     padding-left: 74px;
   }
 
-  .sm\:text-\[65px\]{
-    font-size: 65px;
+  .sm\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .sm\:text-5xl{
@@ -1659,9 +1675,8 @@ li:hover .highlight2 {
     line-height: 1;
   }
 
-  .sm\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .sm\:text-\[65px\]{
+    font-size: 65px;
   }
 
   .sm\:leading-\[77px\]{
@@ -1674,13 +1689,16 @@ li:hover .highlight2 {
     width: 373px;
   }
 
-  .md\:text-\[78px\]{
-    font-size: 78px;
+  .md\:max-w-\[400px\]{
+    max-width: 400px;
   }
 
-  .md\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .md\:max-w-\[350px\]{
+    max-width: 350px;
+  }
+
+  .md\:text-\[78px\]{
+    font-size: 78px;
   }
 
   .md\:leading-\[90px\]{
@@ -1706,11 +1724,6 @@ li:hover .highlight2 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
-
-  .lg\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
-  }
 }
 
 @media (min-width: 1130px){
@@ -1722,6 +1735,10 @@ li:hover .highlight2 {
     top: 50%;
   }
 
+  .xl\:flex{
+    display: flex;
+  }
+
   .xl\:max-w-\[350px\]{
     max-width: 350px;
   }
@@ -1731,6 +1748,10 @@ li:hover .highlight2 {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .xl\:flex-nowrap{
+    flex-wrap: nowrap;
+  }
+
   .xl\:border{
     border-width: 1px;
   }
@@ -1738,6 +1759,12 @@ li:hover .highlight2 {
   .xl\:border-color-gray{
     --tw-border-opacity: 1;
     border-color: rgb(153 153 153 / var(--tw-border-opacity));
+  }
+}
+
+@media (min-width: 1220px){
+  .\32xl\:flex-nowrap{
+    flex-wrap: nowrap;
   }
 }
 
