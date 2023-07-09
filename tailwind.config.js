@@ -20,23 +20,29 @@ module.exports = {
 
       },
       screens: {
+
         'lg': '950px',
         'xl': '1130px',
-        '2xl': '1130px',
+        '2xl': '1220px',
+        '3xl': '1420px',
+
 
         // => @media (min-width: 640px) { ... }
 
 
       },
+
       container: {
         padding: {
           DEFAULT: '1rem',
           sm: '1rem',
           lg: '1rem',
-          xl: '1rem',
-          '2xl': '1rem',
+          xl: '2rem',
+          '2xl': '4rem',
+          '3xl': '12rem',
         },
       },
+
       fontFamily: {
         'sans': ["Inter","sans-serif", ],
 
