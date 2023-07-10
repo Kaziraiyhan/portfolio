@@ -1496,6 +1496,11 @@ li:hover .highlight2 {
   line-height: 1rem;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-light{
   font-weight: 300;
 }
