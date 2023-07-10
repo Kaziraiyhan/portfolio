@@ -1724,9 +1724,19 @@ li:hover .highlight2 {
   background-color: transparent;
 }
 
+.hover\:bg-color-dark:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 33 36 / var(--tw-bg-opacity));
+}
+
 .hover\:text-primary:hover{
   --tw-text-opacity: 1;
   color: rgb(109 255 133 / var(--tw-text-opacity));
+}
+
+.hover\:text-color-lite:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:shadow:hover{
@@ -1772,6 +1782,10 @@ li:hover .highlight2 {
 }
 
 @media (min-width: 640px){
+  .sm\:w-\[373px\]{
+    width: 373px;
+  }
+
   .sm\:max-w-\[290px\]{
     max-width: 290px;
   }
@@ -1802,6 +1816,14 @@ li:hover .highlight2 {
 @media (min-width: 768px){
   .md\:w-\[373px\]{
     width: 373px;
+  }
+
+  .md\:w-\[3563px\]{
+    width: 3563px;
+  }
+
+  .md\:w-\[356px\]{
+    width: 356px;
   }
 
   .md\:justify-start{
