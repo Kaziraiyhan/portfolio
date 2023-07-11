@@ -16,6 +16,12 @@
     <link rel="stylesheet" href="./dist/output.css" />
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body class="bg-color-dark">
     <nav>
@@ -1048,12 +1054,18 @@
             <span class="capitalize text-primary">together</span>
           </h3>
 
-          <form class="mb-10 flex flex-wrap gap-y-10" action="">
+          <form
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            class="mb-10 flex flex-wrap gap-y-10"
+            action=""
+            onsubmit="return check_form()"
+          >
             <div class="input-group flex w-[373px] flex-col gap-2">
               <label class="capitalize text-color-lite" for="full_name"
                 >full Name <sup class="text-red-600">*</sup></label
               ><input
-                class="bg-transparent pr-8 text-base sm:text-xl text-color-deap outline-none placeholder:text-color-deap"
+                class="relative bg-transparent pr-8 text-base text-color-deap outline-none placeholder:text-color-deap after:absolute after:left-0 after:top-0 after:bg-red-50 after:content-['hellow'] sm:text-xl"
                 type="text"
                 name="full-name"
                 id="full_name"
@@ -1065,7 +1077,7 @@
               <label class="capitalize text-color-lite" for="email"
                 >email <sup class="text-red-600">*</sup></label
               ><input
-                class="bg-transparent pr-8 text-base sm:text-xl capitalize text-color-deap outline-none placeholder:text-color-deap"
+                class="bg-transparent pr-8 text-base capitalize text-color-deap outline-none placeholder:text-color-deap sm:text-xl"
                 type="email"
                 name="email"
                 id="email"
@@ -1076,10 +1088,10 @@
               <label class="capitalize text-color-lite" for="number"
                 >Phone number <sup class="text-red-600">*</sup></label
               ><input
-                class="bg-transparent pr-8 text-base sm:text-xl text-color-deap outline-none placeholder:text-color-deap"
-                type="number"
+                class="bg-transparent pr-8 text-base text-color-deap outline-none placeholder:text-color-deap sm:text-xl"
+                type="text"
                 name="phone-number"
-                id="text"
+                id="number"
                 placeholder="Your Phone Number"
               />
             </div>
@@ -1088,7 +1100,7 @@
               <label class="capitalize text-color-lite" for="full_name"
                 >subject <sup class="text-red-600">*</sup></label
               ><input
-                class="bg-transparent pr-8 text-base sm:text-xl capitalize text-color-deap outline-none placeholder:text-color-deap"
+                class="bg-transparent pr-8 text-base capitalize text-color-deap outline-none placeholder:text-color-deap sm:text-xl"
                 type="text"
                 name="subject"
                 id="subject"
@@ -1101,7 +1113,7 @@
                 >subject
                 <small class="text-color-gray">(optional)</small></label
               ><input
-                class="bg-transparent pr-8 text-base sm:text-xl capitalize text-color-deap outline-none placeholder:text-color-deap"
+                class="bg-transparent pr-8 text-base capitalize text-color-deap outline-none placeholder:text-color-deap sm:text-xl"
                 type="text"
                 name="budget"
                 id="budget"
@@ -1113,7 +1125,7 @@
               <label class="capitalize text-color-lite" for="message"
                 >message </label
               ><input
-                class="bg-transparent pr-8 text-base sm:text-xl capitalize text-color-deap outline-none placeholder:text-color-deap"
+                class="bg-transparent pr-8 text-base capitalize text-color-deap outline-none placeholder:text-color-deap sm:text-xl"
                 type="text"
                 name="message"
                 id="message"
@@ -1166,6 +1178,7 @@
     <script>
       AOS.init();
     </script>
+    <script src="./public/js/form_validation.js"></script>
     <script src="./public/js/script.js"></script>
   </body>
 </html>
