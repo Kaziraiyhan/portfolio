@@ -15,21 +15,12 @@ module.exports = {
         'secondary': '#203239',
         'color-dark':'#202124',
         'Dark_secondary':'#0f181c',
-
-       
-
       },
       screens: {
-
         'lg': '950px',
         'xl': '1180px',
         '2xl': '1220px',
         '3xl': '1420px',
-
-
-        // => @media (min-width: 640px) { ... }
-
-
       },
 
       container: {
@@ -46,9 +37,8 @@ module.exports = {
       fontFamily: {
         'sans': ["Inter","sans-serif", ],
 
-        
-    
       },
+      
       animation: {
         'spin-slow': 'spin 7s linear infinite',
         'spin-rev': 'spin 7s linear infinite reverse',

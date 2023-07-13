@@ -7,17 +7,39 @@ var reg = new RegExp('^[0-9]+$');
 let number =  document.querySelector("#number")
 let barth_date = document.querySelector("#barth_date")
 
+function hide_it(element){
+  element.addEventListener('mouseover', function handleMouseOver() {
+    full_name.parentElement.classList.add("thing2")
+  return hide_it
+    });
+  
+}
+
+hide_it(full_name)
+
+
+// full_name.parentElement.addEventListener('mouseover', function handleMouseOver() {
+//   full_name.parentElement.classList.add("thing2")
+//   });
+
 
 
 function check_form () {
   var return_val = true ;
   
    if (full_name.value == "") { 
-    full_name.style.setProperty('--after',"' *Entet Your Name'")
+    full_name.parentElement.style.setProperty('--after',"' *Entet Your Name'")
+    // full_name.parentElement.style.setProperty('background',"red")
+    full_name.parentElement.classList.add("thing1")
+    full_name.parentElement.classList.remove("thing2")
+   
+    console.log("name nai")
    return_val = false }
 
    if (!full_name.value == "") { 
-    console.log("  First name nai")
+    console.log("  First name ad")
+    full_name.parentElement.style.setProperty('--after',"' *Entet Your Name'")
+
     full_name.style.setProperty('--after',"' '")
  }
 
@@ -122,6 +144,6 @@ window.scroll({
   });
   
   // Scroll to a certain element
-  document.querySelector('.hello').scrollIntoView({ 
-    behavior: 'smooth' 
-  });
+  // document.querySelector('.hello').scrollIntoView({ 
+  //   behavior: 'smooth' 
+  // });
