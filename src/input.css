@@ -46,27 +46,25 @@
     @apply xl:max-w-[770px];
   }
 
-.after {
-  @apply after:absolute after:left-0 after:top-0   sm:text-xl;
-}
-.thing1::after {
-  content: var(--after);
-  display: inline-block;
-  background-color: #202124;
-  position: absolute;
-  left: 0;
-  top: 32px;
-  padding: 3px;
-  color: rgb(230, 2, 2);
-  opacity: 1;
-  visibility:visible;
-  transition: ease-in .3s;
-}
+  .after {
+    @apply after:absolute after:left-0 after:top-0   sm:text-xl;
+  }
+  .thing1::after {
+    content: var(--after);
+    display: inline-block;
+    background-color: #202124;
+    position: absolute;
+    left: -10px;
+    top: 32px;
+    padding: 3px;
+    color: rgb(230, 2, 2);
+    opacity: 1;
+    visibility: visible;
+    transition: ease-out 0.2s;
+  }
 
-.thing1.thing2::after {
-  opacity: 0;
-  visibility: hidden;
-  
-  
-}
+  .thing1.thing2::after {
+    opacity: 0;
+    visibility: hidden;
+  }
 }

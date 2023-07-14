@@ -732,13 +732,13 @@ li:hover .highlight2 {
   display: inline-block;
   background-color: #202124;
   position: absolute;
-  left: 0;
+  left: -10px;
   top: 32px;
   padding: 3px;
   color: rgb(230, 2, 2);
   opacity: 1;
-  visibility:visible;
-  transition: ease-in .3s;
+  visibility: visible;
+  transition: ease-out 0.2s;
 }
 
 .thing1.thing2::after {

@@ -8,14 +8,15 @@ let number =  document.querySelector("#number")
 let barth_date = document.querySelector("#barth_date")
 
 function hide_it(element){
-  element.addEventListener('mouseover', function handleMouseOver() {
-    full_name.parentElement.classList.add("thing2")
+  element.addEventListener('click', function handleMouseOver() {
+    this.classList.add("thing2");
+  this.querySelector("input").focus() 
   return hide_it
     });
   
 }
 
-hide_it(full_name)
+// hide_it(full_name.parentElement);
 
 
 // full_name.parentElement.addEventListener('mouseover', function handleMouseOver() {
@@ -32,12 +33,9 @@ function check_form () {
     // full_name.parentElement.style.setProperty('background',"red")
     full_name.parentElement.classList.add("thing1")
     full_name.parentElement.classList.remove("thing2")
-   
-    console.log("name nai")
    return_val = false }
 
    if (!full_name.value == "") { 
-    console.log("  First name ad")
     full_name.parentElement.style.setProperty('--after',"' *Entet Your Name'")
 
     full_name.style.setProperty('--after',"' '")
@@ -50,7 +48,6 @@ function check_form () {
 
    if (email.value == ""){
      email.style.setProperty( "--after", "'*Enter Email Address'")
-    console.log("  First email nai")
 
      return_val = false
 
@@ -63,7 +60,6 @@ function check_form () {
   
      if(number.value == ""){
     number.style.setProperty("--after", `"Number can't be empty"`)
-    console.log("  Number nai")
 
     return_val = false
   }
