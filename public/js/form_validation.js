@@ -16,7 +16,7 @@ function hide_it(element){
   
 }
 
-// hide_it(full_name.parentElement);
+hide_it(full_name.parentElement);
 
 
 // full_name.parentElement.addEventListener('mouseover', function handleMouseOver() {
